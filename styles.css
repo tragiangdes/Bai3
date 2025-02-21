@@ -1,0 +1,107 @@
+/* Import Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Design System */
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+/* Product Card */
+.product-card {
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    padding: 15px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-title {
+    color: #333;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Giới hạn tối đa 2 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.product-category {
+    color: #a9a6a6;
+    margin-top: 5px;
+}
+
+.product-price {
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+/* Hover Effects */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #e2f1fa;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-card {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+}
+
